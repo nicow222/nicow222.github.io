@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(49, 65, 109);
+}
+
+.posicion-col3{
+  margin-top: 25px;
+}
+
+.nav-footer{
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.inav{
+  font-size: 64px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icontact{
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.img-thumbnail {
+  max-width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.progress {
+  background-color: #cfcfcf; /* Cambiar el color de fondo de toda la barra de progreso a gris oscuro */
+}
+
+.parrafo{
+  font-size: 20px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 1rem;
+}
+
+.contenido-inicio{
+  padding: 70px 30px 70px 80px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+}
+
+.mi-titulo{
+  margin-top: 30px;
+}
+
+.contenido-sobre-mi{
+  padding: 30px 30px 30px 30px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+}
+
+.contenido-experiencia{
+  padding: 30px 30px 30px 30px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+}
+
+.contenido-educacion{
+  padding: 30px 30px 30px 30px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+}
+
+.contenido-contacto{
+  padding: 30px 30px 30px 30px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
