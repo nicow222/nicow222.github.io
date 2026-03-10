@@ -496,3 +496,250 @@ a.contact-item:hover {
 .site-footer .nav-link:hover {
     color: rgba(255,255,255,0.9) !important;
 }
+
+/* ─── MOBILE TAB BAR (hidden on desktop) ─────── */
+.mobile-tabs {
+    display: none;
+}
+
+/* ─── RESPONSIVE MOBILE ──────────────────────── */
+@media (max-width: 767.98px) {
+
+    /* Sidebar → horizontal sticky header */
+    .sidebar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        min-height: auto;
+        height: auto;
+        padding: 14px 16px 8px;
+        text-align: center;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    }
+
+    .sidebar-avatar {
+        width: 56px;
+        border-radius: 50%;
+        margin: 0 auto 6px;
+        display: block;
+        border-width: 2px;
+    }
+
+    .sidebar-name {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+
+    .sidebar-role {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .sidebar-nav {
+        display: none;
+    }
+
+    .sidebar-social {
+        display: none;
+    }
+
+    /* Bottom tab bar */
+    .mobile-tabs {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        background: linear-gradient(180deg, #1a2236 0%, #151c2e 100%);
+        box-shadow: 0 -2px 16px rgba(0,0,0,0.4);
+        padding: 4px 0 env(safe-area-inset-bottom, 4px);
+        justify-content: space-around;
+    }
+
+    .mobile-tabs a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        text-decoration: none;
+        color: rgba(255,255,255,0.45);
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        padding: 6px 4px 4px;
+        flex: 1;
+        text-align: center;
+        transition: color 0.2s;
+    }
+
+    .mobile-tabs a i {
+        font-size: 20px;
+    }
+
+    .mobile-tabs a.active,
+    .mobile-tabs a:hover {
+        color: #7eb3e0;
+    }
+
+    /* Space for bottom bar */
+    .main-col {
+        padding-bottom: 70px !important;
+    }
+
+    /* Main column padding */
+    .main-col {
+        padding: 0 4px 30px;
+    }
+
+    /* Section cards */
+    .section-card {
+        padding: 20px 16px;
+        margin-top: 16px;
+        border-radius: 10px;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 28px 20px;
+    }
+
+    .hero-name {
+        font-size: 24px;
+    }
+
+    .hero-title {
+        font-size: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+    }
+
+    .hero-stack span {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    /* Section titles */
+    .section-title {
+        font-size: 16px;
+    }
+
+    /* Timeline → stacked cards */
+    .timeline {
+        padding-left: 0;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-dot {
+        display: none;
+    }
+
+    .timeline-item {
+        margin-bottom: 16px;
+    }
+
+    .timeline-content {
+        padding: 16px;
+        border-radius: 12px;
+        border-left: 3px solid #3498db;
+    }
+
+    .exp-header {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .exp-period {
+        background: rgba(52,152,219,0.1);
+        color: #3498db;
+        font-style: normal;
+        font-weight: 600;
+        padding: 2px 10px;
+        border-radius: 12px;
+        font-size: 11px;
+        display: inline-block;
+        margin-top: 4px;
+    }
+
+    .exp-role {
+        font-size: 15px;
+    }
+
+    .exp-company {
+        font-size: 13px;
+    }
+
+    .exp-tags {
+        gap: 4px;
+    }
+
+    .tag {
+        font-size: 11px;
+        padding: 3px 9px;
+    }
+
+    /* Education cards */
+    .edu-card {
+        padding: 12px 14px;
+        gap: 10px;
+    }
+
+    .edu-card h3 {
+        font-size: 14px;
+    }
+
+    .edu-icon {
+        font-size: 20px;
+    }
+
+    /* Soft skills → single column */
+    .soft-skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact → single column */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-item {
+        font-size: 13px;
+        padding: 12px 14px;
+    }
+
+    .contact-item span {
+        word-break: break-all;
+    }
+
+    /* Stack banner */
+    .stack-banner {
+        font-size: 13px;
+    }
+
+    /* Footer */
+    .site-footer .nav {
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+
+    .site-footer .nav-link {
+        font-size: 12px;
+        padding: 4px 8px !important;
+    }
+
+    /* Idiomas */
+    .idiomas-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .idioma-badge {
+        font-size: 13px;
+        text-align: center;
+    }
+}
