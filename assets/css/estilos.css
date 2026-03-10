@@ -61,6 +61,29 @@ body {
     color: #fff !important;
 }
 
+/* ─── LANGUAGE TOGGLE ─────────────────────────── */
+.lang-toggle {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    z-index: 10;
+}
+
+.lang-toggle:hover {
+    background: rgba(255,255,255,0.22);
+    border-color: rgba(255,255,255,0.4);
+}
+
 .sidebar-social {
     margin-top: 24px;
     display: flex;
@@ -515,6 +538,13 @@ a.contact-item:hover {
         padding: 14px 16px 8px;
         text-align: center;
         box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    }
+
+    .lang-toggle {
+        top: 10px;
+        right: 12px;
+        padding: 3px 10px;
+        font-size: 12px;
     }
 
     .sidebar-avatar {

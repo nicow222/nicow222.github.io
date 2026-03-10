@@ -15,17 +15,18 @@
 
             <!-- SIDEBAR -->
             <div class="col-12 col-md-3 sidebar">
+                <button class="lang-toggle" onclick="toggleLanguage()" title="Switch to English">EN</button>
                 <img class="sidebar-avatar" src="assets/img/1752516233062.jpeg" alt="imagen de perfil">
                 <div class="sidebar-name">Angelo Nicolas Wolhein</div>
                 <div class="sidebar-role">Senior Backend Engineer</div>
 
                 <ul class="nav flex-column sidebar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#cont-inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cont-perfil">Perfil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cont-experiencia">Experiencia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cont-educacion">Educación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cont-habilidades">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cont-contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#cont-inicio" data-i18n="nav-inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cont-perfil" data-i18n="nav-perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cont-experiencia" data-i18n="nav-experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cont-educacion" data-i18n="nav-educacion">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cont-habilidades" data-i18n="nav-habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cont-contacto" data-i18n="nav-contacto">Contacto</a></li>
                 </ul>
 
                 <div class="sidebar-social">
@@ -45,59 +46,59 @@
                 <section class="section-card hero-section" id="cont-inicio">
                     <div class="hero-text">
                         <h1 class="hero-name">Angelo Nicolas Wolhein</h1>
-                        <h2 class="hero-title">Senior Backend Engineer</h2>
-                        <p class="hero-subtitle">Desarrollador/Product Owner &nbsp;·&nbsp; Fintech &nbsp;·&nbsp; Sistemas Cloud-Native</p>
+                        <h2 class="hero-title" data-i18n="hero-title">Senior Backend Engineer</h2>
+                        <p class="hero-subtitle" data-i18n="hero-subtitle">Desarrollador/Product Owner &nbsp;·&nbsp; Fintech &nbsp;·&nbsp; Sistemas Cloud-Native</p>
                         <div class="hero-stack">
-                            <span>Go</span><span>Python</span><span>Java</span><span>AWS</span><span>Microservicios</span><span>Docker</span><span>Kubernetes</span><span>Kafka</span><span>RabbitMQ</span><span>SQL</span><span>NoSQL</span>
+                            <span>Go</span><span>Python</span><span>Java</span><span>AWS</span><span data-i18n="hero-micro">Microservicios</span><span>Docker</span><span>Kubernetes</span><span>Kafka</span><span>RabbitMQ</span><span>SQL</span><span>NoSQL</span>
                         </div>
                     </div>
                 </section>
 
                 <!-- PERFIL -->
                 <section class="section-card" id="cont-perfil">
-                    <h2 class="section-title">Perfil Profesional</h2>
-                    <p class="text-body">
+                    <h2 class="section-title" data-i18n="perfil-titulo">Perfil Profesional</h2>
+                    <p class="text-body" data-i18n="perfil-p1">
                         Senior Backend Engineer con más de <strong>5 años de experiencia</strong> en el desarrollo de
                         <strong>sistemas backend monolíticos</strong>, <strong>arquitecturas de microservicios event-driven</strong>
                         y <strong>sistemas distribuidos de alto rendimiento</strong>. Fuerte base técnica en
                         <strong>Go y Python</strong>, con experiencia en el diseño y optimización de
                         <strong>plataformas críticas, incluyendo entornos fintech</strong>.
                     </p>
-                    <p class="text-body mt-3">
+                    <p class="text-body mt-3" data-i18n="perfil-p2">
                         Como Tech Lead, he liderado equipos backend y participado en la definición y evolución de
                         arquitecturas robustas, enfocadas en la estabilidad, mantenibilidad y mejora continua,
                         alineando las decisiones técnicas con los objetivos del negocio.
                     </p>
-                    <div class="stack-banner mt-3">
+                    <div class="stack-banner mt-3" data-i18n="perfil-stack">
                         <strong>Stack Principal:</strong> Go (Fiber) &bull; Python (Django, FastAPI) &bull; Java (Spring Boot) &bull; AWS Cloud Services &bull; Docker &bull; Docker Swarm &bull; Kubernetes &bull; RabbitMQ &bull; Kafka &bull; PostgreSQL &bull; MySQL &bull; MongoDB &bull; Redis &bull; OpenSearch &bull; Nginx &bull; CI/CD
                     </div>
                 </section>
 
                 <!-- EXPERIENCIA -->
                 <section class="section-card" id="cont-experiencia">
-                    <h2 class="section-title">Experiencia Profesional</h2>
+                    <h2 class="section-title" data-i18n="exp-titulo">Experiencia Profesional</h2>
                     <div class="timeline">
 
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <div class="exp-header">
-                                    <h3 class="exp-role">Backend Developer &amp; Product Owner</h3>
-                                    <span class="exp-period">2025 - Presente</span>
+                                    <h3 class="exp-role" data-i18n="exp1-role">Backend Developer &amp; Product Owner</h3>
+                                    <span class="exp-period" data-i18n="exp1-period">2025 - Presente</span>
                                 </div>
-                                <div class="exp-company">PVS - Billetera Digital</div>
-                                <p class="text-body mt-2">Desarrollo backend y gestión de producto en una billetera digital con flujos de criptomonedas.</p>
-                                <p class="label-section">Features Desarrolladas:</p>
+                                <div class="exp-company" data-i18n="exp1-company">PVS - Billetera Digital</div>
+                                <p class="text-body mt-2" data-i18n="exp1-desc">Desarrollo backend y gestión de producto en una billetera digital con flujos de criptomonedas.</p>
+                                <p class="label-section" data-i18n="exp1-label1">Features Desarrolladas:</p>
                                 <ul class="text-body">
-                                    <li>Implementación de flujos de retiro y depósito de criptomonedas con validaciones de seguridad y consistencia transaccional</li>
-                                    <li>Integración con servicios externos para procesamiento de transacciones y gestión de activos digitales</li>
-                                    <li>Diseño de lógica de negocio para gestión de estados, confirmaciones y reconciliación de operaciones cripto</li>
+                                    <li data-i18n="exp1-li1">Implementación de flujos de retiro y depósito de criptomonedas con validaciones de seguridad y consistencia transaccional</li>
+                                    <li data-i18n="exp1-li2">Integración con servicios externos para procesamiento de transacciones y gestión de activos digitales</li>
+                                    <li data-i18n="exp1-li3">Diseño de lógica de negocio para gestión de estados, confirmaciones y reconciliación de operaciones cripto</li>
                                 </ul>
-                                <p class="label-section">Responsabilidades de Producto:</p>
+                                <p class="label-section" data-i18n="exp1-label2">Responsabilidades de Producto:</p>
                                 <ul class="text-body">
-                                    <li>Definición y priorización del backlog alineado con objetivos de negocio</li>
-                                    <li>Coordinación con Program Manager para evolución del producto</li>
-                                    <li>Documentación funcional y técnica de features</li>
+                                    <li data-i18n="exp1-li4">Definición y priorización del backlog alineado con objetivos de negocio</li>
+                                    <li data-i18n="exp1-li5">Coordinación con Program Manager para evolución del producto</li>
+                                    <li data-i18n="exp1-li6">Documentación funcional y técnica de features</li>
                                 </ul>
                                 <div class="exp-tags">
                                     <span class="tag tag-lang">Java</span>
@@ -113,33 +114,33 @@
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <div class="exp-header">
-                                    <h3 class="exp-role">Tech Lead &amp; Senior Backend Engineer</h3>
+                                    <h3 class="exp-role" data-i18n="exp2-role">Tech Lead &amp; Senior Backend Engineer</h3>
                                     <span class="exp-period">Mar 2022 - 2025</span>
                                 </div>
-                                <div class="exp-company">TACH Argentina - Fintech (Billetera Digital)</div>
-                                <p class="text-body mt-2">
+                                <div class="exp-company" data-i18n="exp2-company">TACH Argentina - Fintech (Billetera Digital)</div>
+                                <p class="text-body mt-2" data-i18n="exp2-desc">
                                     Liderazgo técnico del backend de una plataforma fintech. Construí y mentoré un equipo desde cero hasta operación autónoma con alto estándar técnico.
                                 </p>
-                                <p class="label-section">Impacto en Producto y Negocio:</p>
+                                <p class="label-section" data-i18n="exp2-label1">Impacto en Producto y Negocio:</p>
                                 <ul class="text-body">
-                                    <li>Estabilicé un sistema crítico con incidentes recurrentes, mejorando significativamente la disponibilidad en producción</li>
-                                    <li>Diseñé e implementé una arquitectura de microservicios orientada a eventos con RabbitMQ, reduciendo el time-to-market</li>
-                                    <li>Optimicé operaciones backend críticas para acompañar el crecimiento de usuarios</li>
+                                    <li data-i18n="exp2-li1">Estabilicé un sistema crítico con incidentes recurrentes, mejorando significativamente la disponibilidad en producción</li>
+                                    <li data-i18n="exp2-li2">Diseñé e implementé una arquitectura de microservicios orientada a eventos con RabbitMQ, reduciendo el time-to-market</li>
+                                    <li data-i18n="exp2-li3">Optimicé operaciones backend críticas para acompañar el crecimiento de usuarios</li>
                                 </ul>
-                                <p class="label-section">Features Críticas:</p>
+                                <p class="label-section" data-i18n="exp2-label2">Features Críticas:</p>
                                 <ul class="text-body">
-                                    <li>Plataformas de pago por QR con alta disponibilidad y consistencia transaccional</li>
-                                    <li>Procesos de reversos y contracargos con máquinas de estado y validaciones complejas</li>
-                                    <li>Reglas de acreditación configurables para distintos esquemas de medios de pago</li>
-                                    <li>Eventos y webhooks para procesamiento y observabilidad en tiempo real</li>
-                                    <li>Integración con redes de pago y entidades financieras (QR y transferencias electrónicas)</li>
+                                    <li data-i18n="exp2-li4">Plataformas de pago por QR con alta disponibilidad y consistencia transaccional</li>
+                                    <li data-i18n="exp2-li5">Procesos de reversos y contracargos con máquinas de estado y validaciones complejas</li>
+                                    <li data-i18n="exp2-li6">Reglas de acreditación configurables para distintos esquemas de medios de pago</li>
+                                    <li data-i18n="exp2-li7">Eventos y webhooks para procesamiento y observabilidad en tiempo real</li>
+                                    <li data-i18n="exp2-li8">Integración con redes de pago y entidades financieras (QR y transferencias electrónicas)</li>
                                 </ul>
-                                <p class="label-section">Liderazgo:</p>
+                                <p class="label-section" data-i18n="exp2-label3">Liderazgo:</p>
                                 <ul class="text-body">
-                                    <li>Diseño de arquitectura de microservicios y definición de estándares técnicos</li>
-                                    <li>Reclutamiento, entrevistas técnicas y mentoring de equipo backend</li>
-                                    <li>Code review, mejores prácticas y guidelines arquitectónicos</li>
-                                    <li>Planificación técnica, priorización y delegación de tareas</li>
+                                    <li data-i18n="exp2-li9">Diseño de arquitectura de microservicios y definición de estándares técnicos</li>
+                                    <li data-i18n="exp2-li10">Reclutamiento, entrevistas técnicas y mentoring de equipo backend</li>
+                                    <li data-i18n="exp2-li11">Code review, mejores prácticas y guidelines arquitectónicos</li>
+                                    <li data-i18n="exp2-li12">Planificación técnica, priorización y delegación de tareas</li>
                                 </ul>
                                 <div class="exp-tags">
                                     <span class="tag tag-lang">Go</span>
@@ -161,19 +162,19 @@
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <div class="exp-header">
-                                    <h3 class="exp-role">Backend Developer &amp; Product Manager</h3>
+                                    <h3 class="exp-role" data-i18n="exp3-role">Backend Developer &amp; Product Manager</h3>
                                     <span class="exp-period">2020 - 2025</span>
                                 </div>
-                                <div class="exp-company">Cognitis Software House - Cooperativa de Desarrollo</div>
-                                <p class="text-body mt-2">
+                                <div class="exp-company" data-i18n="exp3-company">Cognitis Software House - Cooperativa de Desarrollo</div>
+                                <p class="text-body mt-2" data-i18n="exp3-desc">
                                     Diseño y desarrollo de sistemas de gestión enterprise monolíticos, desde análisis hasta despliegue y evolución del producto.
                                 </p>
-                                <p class="label-section">Proyectos Destacados:</p>
+                                <p class="label-section" data-i18n="exp3-label1">Proyectos Destacados:</p>
                                 <ul class="text-body">
-                                    <li><strong>Sistema de Gestión para Óptica:</strong> ERP con inventario, ventas, facturación y gestión de recetas médicas</li>
-                                    <li><strong>Sistema de Gestión para Hormigonera:</strong> Control de producción, despacho, logística y facturación</li>
-                                    <li><strong>Sistema para Colegio de Escribanos:</strong> Gestión documental, matriculación y trámites administrativos</li>
-                                    <li><strong>Monitor de Operaciones para Nasini:</strong> Seguimiento de operaciones con dólar MEP</li>
+                                    <li data-i18n="exp3-li1"><strong>Sistema de Gestión para Óptica:</strong> ERP con inventario, ventas, facturación y gestión de recetas médicas</li>
+                                    <li data-i18n="exp3-li2"><strong>Sistema de Gestión para Hormigonera:</strong> Control de producción, despacho, logística y facturación</li>
+                                    <li data-i18n="exp3-li3"><strong>Sistema para Colegio de Escribanos:</strong> Gestión documental, matriculación y trámites administrativos</li>
+                                    <li data-i18n="exp3-li4"><strong>Monitor de Operaciones para Nasini:</strong> Seguimiento de operaciones con dólar MEP</li>
                                 </ul>
                                 <div class="exp-tags">
                                     <span class="tag tag-lang">Python</span>
@@ -190,14 +191,14 @@
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <div class="exp-header">
-                                    <h3 class="exp-role">Programador C# .NET &amp; Soporte Técnico</h3>
+                                    <h3 class="exp-role" data-i18n="exp4-role">Programador C# .NET &amp; Soporte Técnico</h3>
                                     <span class="exp-period">2019 - 2020</span>
                                 </div>
                                 <div class="exp-company">Gestión Comercio</div>
                                 <ul class="text-body mt-2">
-                                    <li>Desarrollo de módulos nuevos y mantenimiento de aplicaciones legacy en C# .NET</li>
-                                    <li>Diseño y optimización de queries SQL Server</li>
-                                    <li>Soporte técnico en sitio y remoto, capacitación de usuarios finales</li>
+                                    <li data-i18n="exp4-li1">Desarrollo de módulos nuevos y mantenimiento de aplicaciones legacy en C# .NET</li>
+                                    <li data-i18n="exp4-li2">Diseño y optimización de queries SQL Server</li>
+                                    <li data-i18n="exp4-li3">Soporte técnico en sitio y remoto, capacitación de usuarios finales</li>
                                 </ul>
                                 <div class="exp-tags">
                                     <span class="tag tag-lang">C# .NET</span>
@@ -210,11 +211,11 @@
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <div class="exp-header">
-                                    <h3 class="exp-role">Técnico en Hardware y Software</h3>
+                                    <h3 class="exp-role" data-i18n="exp5-role">Técnico en Hardware y Software</h3>
                                     <span class="exp-period">2017 - 2019</span>
                                 </div>
                                 <div class="exp-company">BIOS-Informática</div>
-                                <p class="text-body mt-2">
+                                <p class="text-body mt-2" data-i18n="exp5-desc">
                                     Soporte técnico integral, instalación y mantenimiento de equipos informáticos para clientes corporativos y particulares.
                                 </p>
                             </div>
@@ -223,15 +224,15 @@
                     </div>
                 </section>
 
-                <!-- EDUCACIÓN -->
+                <!-- EDUCACION -->
                 <section class="section-card" id="cont-educacion">
-                    <h2 class="section-title">Educación</h2>
+                    <h2 class="section-title" data-i18n="edu-titulo">Educación</h2>
                     <div class="edu-grid">
 
                         <div class="edu-card edu-card--highlight">
                             <div class="edu-icon"><i class="ion-md-school"></i></div>
                             <div>
-                                <h3>Tecnicatura Universitaria en Informática</h3>
+                                <h3 data-i18n="edu1-title">Tecnicatura Universitaria en Informática</h3>
                                 <div class="edu-institution">UNNe - Universidad Nacional del Nordeste</div>
                                 <div class="edu-period">2023 - 2025</div>
                             </div>
@@ -240,7 +241,7 @@
                         <div class="edu-card">
                             <div class="edu-icon"><i class="ion-md-school"></i></div>
                             <div>
-                                <h3>Ingeniería en Sistemas de Información</h3>
+                                <h3 data-i18n="edu2-title">Ingeniería en Sistemas de Información</h3>
                                 <div class="edu-institution">UTN FRRe - Universidad Tecnológica Nacional</div>
                                 <div class="edu-period">2016 - 2021</div>
                             </div>
@@ -249,18 +250,18 @@
                         <div class="edu-card">
                             <div class="edu-icon"><i class="ion-md-ribbon"></i></div>
                             <div>
-                                <h3>Especialización en Data Analytics</h3>
+                                <h3 data-i18n="edu3-title">Especialización en Data Analytics</h3>
                                 <div class="edu-institution">Informatorio - Subsecretaría de Empleo del Chaco</div>
-                                <div class="edu-period">Mayo - Agosto 2023 · 200hs &nbsp;<span class="badge-cert">Certificado</span></div>
+                                <div class="edu-period"><span data-i18n="edu3-period">Mayo - Agosto 2023 · 200hs</span> &nbsp;<span class="badge-cert" data-i18n="badge-cert">Certificado</span></div>
                             </div>
                         </div>
 
                         <div class="edu-card">
                             <div class="edu-icon"><i class="ion-md-ribbon"></i></div>
                             <div>
-                                <h3>Desarrollador Web Full Stack</h3>
+                                <h3 data-i18n="edu4-title">Desarrollador Web Full Stack</h3>
                                 <div class="edu-institution">Informatorio - Chaco Gov</div>
-                                <div class="edu-period">Jun - Sep 2020 · 240hs &nbsp;<span class="badge-cert">Certificado</span></div>
+                                <div class="edu-period"><span data-i18n="edu4-period">Jun - Sep 2020 · 240hs</span> &nbsp;<span class="badge-cert" data-i18n="badge-cert">Certificado</span></div>
                                 <p class="edu-note">Django · Python · JavaScript · SQL</p>
                             </div>
                         </div>
@@ -268,18 +269,18 @@
                         <div class="edu-card">
                             <div class="edu-icon"><i class="ion-md-ribbon"></i></div>
                             <div>
-                                <h3>Primeros Pasos del Desarrollo Frontend</h3>
+                                <h3 data-i18n="edu5-title">Primeros Pasos del Desarrollo Frontend</h3>
                                 <div class="edu-institution">Argentina Programa 4.0</div>
-                                <div class="edu-period">Marzo 2023 &nbsp;<span class="badge-cert">Certificado</span></div>
+                                <div class="edu-period"><span data-i18n="edu5-period">Marzo 2023</span> &nbsp;<span class="badge-cert" data-i18n="badge-cert">Certificado</span></div>
                             </div>
                         </div>
 
                         <div class="edu-card">
                             <div class="edu-icon"><i class="ion-md-ribbon"></i></div>
                             <div>
-                                <h3>Desarrollo de Videojuegos con Godot Engine</h3>
-                                <div class="edu-institution">Formación Especializada</div>
-                                <div class="edu-period">2022 - 2023 · 4 meses &nbsp;<span class="badge-cert">Certificado</span></div>
+                                <h3 data-i18n="edu6-title">Desarrollo de Videojuegos con Godot Engine</h3>
+                                <div class="edu-institution" data-i18n="edu6-institution">Formación Especializada</div>
+                                <div class="edu-period"><span data-i18n="edu6-period">2022 - 2023 · 4 meses</span> &nbsp;<span class="badge-cert" data-i18n="badge-cert">Certificado</span></div>
                             </div>
                         </div>
 
@@ -288,10 +289,10 @@
 
                 <!-- HABILIDADES -->
                 <section class="section-card" id="cont-habilidades">
-                    <h2 class="section-title">Competencias Técnicas</h2>
+                    <h2 class="section-title" data-i18n="skills-titulo">Competencias Técnicas</h2>
 
                     <div class="skills-block">
-                        <h4 class="skills-category-title">Lenguajes</h4>
+                        <h4 class="skills-category-title" data-i18n="skills-lang">Lenguajes</h4>
                         <div class="tags-list">
                             <span class="tag tag-lang">Go</span>
                             <span class="tag tag-lang">Python</span>
@@ -302,7 +303,7 @@
                     </div>
 
                     <div class="skills-block">
-                        <h4 class="skills-category-title">Frameworks &amp; Herramientas</h4>
+                        <h4 class="skills-category-title" data-i18n="skills-fw">Frameworks &amp; Herramientas</h4>
                         <div class="tags-list">
                             <span class="tag tag-fw">Fiber (Go)</span>
                             <span class="tag tag-fw">Django</span>
@@ -347,50 +348,50 @@
                     </div>
 
                     <div class="skills-block">
-                        <h4 class="skills-category-title">Arquitectura &amp; Diseño</h4>
+                        <h4 class="skills-category-title" data-i18n="skills-arch-title">Arquitectura &amp; Diseño</h4>
                         <div class="tags-list">
-                            <span class="tag tag-arch">Monolito Modular</span>
-                            <span class="tag tag-arch">Microservicios Event-Driven</span>
-                            <span class="tag tag-arch">Arquitectura Hexagonal</span>
+                            <span class="tag tag-arch" data-i18n="arch-mono">Monolito Modular</span>
+                            <span class="tag tag-arch" data-i18n="arch-micro">Microservicios Event-Driven</span>
+                            <span class="tag tag-arch" data-i18n="arch-hex">Arquitectura Hexagonal</span>
                             <span class="tag tag-arch">Domain-Driven Design</span>
                             <span class="tag tag-arch">RESTful APIs &amp; gRPC</span>
-                            <span class="tag tag-arch">Distributed Systems</span>
+                            <span class="tag tag-arch" data-i18n="arch-dist">Distributed Systems</span>
                         </div>
                     </div>
 
-                    <h2 class="section-title mt-4">Habilidades Blandas</h2>
+                    <h2 class="section-title mt-4" data-i18n="skills-soft-titulo">Habilidades Blandas</h2>
                     <div class="soft-skills-grid">
                         <div class="soft-skill-card">
                             <i class="ion-md-people soft-skill-icon"></i>
-                            <strong>Liderazgo Técnico</strong>
-                            <p>Construcción y mentoring de equipos, decisiones arquitectónicas, gestión de prioridades</p>
+                            <strong data-i18n="soft1-title">Liderazgo Técnico</strong>
+                            <p data-i18n="soft1-desc">Construcción y mentoring de equipos, decisiones arquitectónicas, gestión de prioridades</p>
                         </div>
                         <div class="soft-skill-card">
                             <i class="ion-md-analytics soft-skill-icon"></i>
-                            <strong>Resolución de Problemas</strong>
-                            <p>Troubleshooting de sistemas complejos y optimización de performance</p>
+                            <strong data-i18n="soft2-title">Resolución de Problemas</strong>
+                            <p data-i18n="soft2-desc">Troubleshooting de sistemas complejos y optimización de performance</p>
                         </div>
                         <div class="soft-skill-card">
                             <i class="ion-md-chatbubbles soft-skill-icon"></i>
-                            <strong>Comunicación</strong>
-                            <p>Traducir requerimientos de negocio en soluciones técnicas y viceversa</p>
+                            <strong data-i18n="soft3-title">Comunicación</strong>
+                            <p data-i18n="soft3-desc">Traducir requerimientos de negocio en soluciones técnicas y viceversa</p>
                         </div>
                         <div class="soft-skill-card">
                             <i class="ion-md-rocket soft-skill-icon"></i>
-                            <strong>Aprendizaje Continuo</strong>
-                            <p>Autodidacta con pasión por nuevas tecnologías y mejores prácticas</p>
+                            <strong data-i18n="soft4-title">Aprendizaje Continuo</strong>
+                            <p data-i18n="soft4-desc">Autodidacta con pasión por nuevas tecnologías y mejores prácticas</p>
                         </div>
                     </div>
 
                     <div class="idiomas-row mt-3">
-                        <span class="idioma-badge">🇦🇷 Español — Nativo</span>
-                        <span class="idioma-badge">🇺🇸 Inglés — Técnico</span>
+                        <span class="idioma-badge"><span data-i18n="idioma-es">Español — Nativo</span></span>
+                        <span class="idioma-badge"><span data-i18n="idioma-en">Inglés — Técnico</span></span>
                     </div>
                 </section>
 
                 <!-- CONTACTO -->
                 <section class="section-card" id="cont-contacto">
-                    <h2 class="section-title">Contacto</h2>
+                    <h2 class="section-title" data-i18n="contacto-titulo">Contacto</h2>
                     <div class="contact-grid">
                         <a class="contact-item" href="mailto:angelonicolasw@gmail.com">
                             <i class="ion-md-mail contact-icon"></i>
@@ -406,7 +407,7 @@
                         </a>
                         <div class="contact-item">
                             <i class="ion-md-map contact-icon"></i>
-                            <span>Argentina — Disponible para trabajo remoto</span>
+                            <span data-i18n="contacto-ubicacion">Argentina — Disponible para trabajo remoto</span>
                         </div>
                     </div>
                 </section>
@@ -416,26 +417,27 @@
 
         <footer class="site-footer">
             <ul class="nav justify-content-end">
-                <li class="nav-item"><a href="#cont-inicio" class="nav-link px-2 text-muted">Inicio</a></li>
-                <li class="nav-item"><a href="#cont-perfil" class="nav-link px-2 text-muted">Perfil</a></li>
-                <li class="nav-item"><a href="#cont-experiencia" class="nav-link px-2 text-muted">Experiencia</a></li>
-                <li class="nav-item"><a href="#cont-educacion" class="nav-link px-2 text-muted">Educación</a></li>
-                <li class="nav-item"><a href="#cont-habilidades" class="nav-link px-2 text-muted">Habilidades</a></li>
-                <li class="nav-item"><a href="#cont-contacto" class="nav-link px-2 text-muted">Contacto</a></li>
+                <li class="nav-item"><a href="#cont-inicio" class="nav-link px-2 text-muted" data-i18n="foot-inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#cont-perfil" class="nav-link px-2 text-muted" data-i18n="foot-perfil">Perfil</a></li>
+                <li class="nav-item"><a href="#cont-experiencia" class="nav-link px-2 text-muted" data-i18n="foot-experiencia">Experiencia</a></li>
+                <li class="nav-item"><a href="#cont-educacion" class="nav-link px-2 text-muted" data-i18n="foot-educacion">Educación</a></li>
+                <li class="nav-item"><a href="#cont-habilidades" class="nav-link px-2 text-muted" data-i18n="foot-habilidades">Habilidades</a></li>
+                <li class="nav-item"><a href="#cont-contacto" class="nav-link px-2 text-muted" data-i18n="foot-contacto">Contacto</a></li>
             </ul>
         </footer>
     </div>
 
     <!-- MOBILE BOTTOM TAB BAR -->
     <nav class="mobile-tabs">
-        <a href="#cont-inicio" class="active"><i class="ion-md-home"></i>Inicio</a>
-        <a href="#cont-perfil"><i class="ion-md-person"></i>Perfil</a>
-        <a href="#cont-experiencia"><i class="ion-md-briefcase"></i>Exp.</a>
-        <a href="#cont-educacion"><i class="ion-md-school"></i>Edu.</a>
+        <a href="#cont-inicio" class="active"><i class="ion-md-home"></i><span data-i18n="nav-inicio">Inicio</span></a>
+        <a href="#cont-perfil"><i class="ion-md-person"></i><span data-i18n="nav-perfil">Perfil</span></a>
+        <a href="#cont-experiencia"><i class="ion-md-briefcase"></i><span data-i18n="mob-exp">Exp.</span></a>
+        <a href="#cont-educacion"><i class="ion-md-school"></i><span data-i18n="mob-edu">Edu.</span></a>
         <a href="#cont-habilidades"><i class="ion-md-code"></i>Skills</a>
-        <a href="#cont-contacto"><i class="ion-md-mail"></i>Contacto</a>
+        <a href="#cont-contacto"><i class="ion-md-mail"></i><span data-i18n="mob-contacto">Contacto</span></a>
     </nav>
 
+    <script src="js/funcion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
